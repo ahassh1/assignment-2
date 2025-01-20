@@ -75,13 +75,81 @@
          font-family: "Quicksand", serif;
          font-size: 11px;
          font-weight: 300;
-         padding: 9px 40px;
+         padding: 9px 30px;
          border: none;
          margin-left: 120px;
  }
- .nav_btn:hover{
+ .nav_btn:hover, .banner_btn:hover{
   background-color: red;
   color: rgb(255, 255, 255);
   transition: .5s;
  }
+ .hide{
+  display: none;
+ }
+ /* navbar resoponsive start */
+ @media screen and (max-width: 576px){
+    .kinder, .nav_head{
+      display: none;
+    }
+
+      .hambarger {
+        display: block;
+        margin: 25px;
+    }
+ }
+ /* navbar responsive end  */
+
+
+ /* banner part start  */
+.banner_container{
+  display: flex;
+  justify-content: space-between;
+}
+.banner_content{
+ margin-top: 100px;
+ 
+}
+.banner_head{
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Quicksand", serif;
+  margin-top: 10px;
+
+}
+.first_head{
+  color: orange;
+  font-size: 57px;
+}
+.second_head{
+  color: blue;
+  font-size: 56px;
+}
+.banner_pra{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Quicksand", serif;
+  margin-top: 18px;
+}
+.banner_btn{
+  color: rgb(255, 255, 255);
+  background-color: rgb(1, 77, 254);
+  border-radius: 6px;
+  font-family: "Quicksand", serif;
+  font-size: 11px;
+  font-weight: 300;
+  padding: 11px 28px;
+  border: none;
+  margin-top: 20px;
+}
+/* banner reponsive start  */
+@media screen and (max-width: 576px){
+ .banner_container{
+  flex-direction: column-reverse;
+ }
+ .banner_content{
+  text-align: center;
+ }
+
+
  
