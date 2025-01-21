@@ -1,3 +1,7 @@
+Live Preview:  https://ahassh1.github.io/assignment-2/
+
+
+
 ### WELCOME TO ASSIGNMENT-002
 
 # <img width=30 src="./assets/logo.png"/> Kids-School
