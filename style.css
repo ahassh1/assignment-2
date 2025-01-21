@@ -12,9 +12,9 @@
     margin: 0;
     outline: 0;
   }
-  .device_width{
+  #device_width{
     width: 85%;
-    background-color: rgba(255, 255, 255, 0.119);
+    background-color: rgba(255, 255, 255, 0.971);
     margin: 0 auto;
   }
   /* navbar start */
@@ -93,9 +93,9 @@
       display: none;
     }
 
-.nav_head, .hambarger{
+.hambarger{
         display: block;
-        /* margin: 25px; */
+        margin: 25px;
     }
  }
  /* navbar responsive end  */
@@ -157,7 +157,7 @@
 }
 
  /* curriculum part start  */
- main{
+ .banner_item{
   background-image: url("./assets/bg.png");
   background-position: center; 
    background-repeat: no-repeat;
@@ -314,8 +314,7 @@ margin-right: 15px;
 }
 .stories_one, .stories_two{
   border-radius: 15px;
-  background-color: rgba(118, 255, 244, 0.621);
-  box-shadow: 10px 10px 2px rgba(24, 80, 80, 0.022);
+  background-color: rgba(239, 242, 245, 0.906);
 }
 
 .stories_one h3{
@@ -338,13 +337,33 @@ margin-right: 15px;
   font-size: 10px;
   font-size: 500; 
   font-family: Quicksand;
-  background-color: rgba(0, 255, 132, 0.945);
+  /* background-color: rgba(0, 255, 132, 0.945); */
   border-radius: 10px;
   padding: 8px 5px;
   border: none;
-  color: white;
+  /* color: white; */
   text-align: center;
   font-family: Quicksand;
+}
+.stories_button_one{
+  background-color: rgba(57, 57, 255, 0.958);
+  color: whitesmoke;
+}
+.stories_button_two{
+  background-color: rgb(0, 255, 174);
+  color: whitesmoke;
+}
+.stories_button_three{
+  background-color: rgb(234, 0, 255);
+  color: whitesmoke;
+}
+.stories_button_four{
+  background-color: rgb(0, 255, 229);
+  color: whitesmoke;
+}
+.stories_button_five{
+  background-color: rgb(255, 153, 0);
+  color: whitesmoke;
 }
 .stories_two button, .stories_one button{
   position: absolute;
@@ -378,7 +397,41 @@ margin-right: 15px;
   }
 
   .footer_container{
-    background-color: rgba(42, 238, 238, 0.875);
+    background-color: rgba(31, 125, 247, 0.78);
     height: 400px;
-   width: 100%;
+   /* width: 100%; */
   }
+
+  .footer_btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 111, 254);
+    border-radius: 6px;
+    font-family: "Quicksand", serif;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 12px 40px;
+    border: none;
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+.footer_btn:hover{
+  background-color: red;
+  transition: .4s;
+}
+.stories_bg_img{
+  /* box-sizing: border-box;
+border: 0.94px solid rgb(242, 232, 255);
+border-radius: 18px;
+box-shadow: inset 0px 0px 28.3px 0.9px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+margin-right: 15px; */
+background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+width: 100%;
+}
+.kinder{
+  color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 28px;
+font-weight: 700;
+text-align: left;
+}
