@@ -10,7 +10,11 @@
   *{
     padding: 0;
     margin: 0;
-    outline: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: Quicksand;
+    line-height: 1.5;
   }
   #device_width{
     width: 85%;
@@ -31,12 +35,14 @@
     text-decoration: none;
   }
   .nav_logo{
-    font-family: "Quicksand", serif;
     display: flex;
     align-items: center;
     text-align: center;
     margin-top: 10px;
   }
+  /* .kinder_garden{
+
+  } */
   .nav_head ul{
     display: flex;
     justify-content: space-between;
@@ -51,19 +57,19 @@
   }
   .ab{
     color: rgb(0, 242, 255);
-    font-family: "Quicksand", serif;
+  
     font-size: 18px;
     font-weight: 600;
   }
   .faci{
     color: rgb(126, 28, 217);
-    font-family: "Quicksand", serif;
+  
     font-size: 18px;
     font-weight: 600;
   }
   .ad{
     color: rgb(255, 47, 186);
-    font-family: "Quicksand", serif;
+    
     font-size: 18px;
     font-weight: 600;
   }
@@ -72,7 +78,7 @@
          color: rgb(255, 255, 255);
          background-color: rgb(254, 140, 1);
          border-radius: 6px;
-         font-family: "Quicksand", serif;
+       
          font-size: 11px;
          font-weight: 300;
          padding: 9px 30px;
@@ -89,7 +95,7 @@
  }
  /* navbar resoponsive start */
  @media screen and (max-width: 576px){
-    .kinder, .nav_head{
+    .kinder_garden, .nav_head{
       display: none;
     }
 
@@ -113,7 +119,7 @@
 .banner_head{
   font-size: 55px;
   font-weight: bold;
-  font-family: "Quicksand", serif;
+ 
   margin-top: 10px;
 
 }
@@ -128,14 +134,13 @@
 .banner_pra{
   font-size: 15px;
   font-weight: 400;
-  font-family: "Quicksand", serif;
+ 
   margin-top: 18px;
 }
 .banner_btn{
   color: rgb(255, 255, 255);
   background-color: rgb(1, 77, 254);
   border-radius: 6px;
-  font-family: "Quicksand", serif;
   font-size: 11px;
   font-weight: 300;
   padding: 11px 28px;
@@ -167,7 +172,6 @@
   margin-top: 60px;
   font-weight: bolder;
   font-size: 25px;
-  font-family: "Quicksand", serif;
   text-align: center;
 }
 .curriculum_container{
@@ -184,7 +188,7 @@
 .kinder{
   font-size: 20px;
   font-weight: 500;
-  font-family: "Quicksand", serif;
+ 
   margin: 20px;
 }
 .first_pra{
@@ -232,21 +236,21 @@ margin-right: 15px;
   text-decoration: none;
   color: blue;
   font-size: 13px;
-  font-family: Quicksand;  
+  
   margin-right: 20px;
 }
 .ancor_second{
   text-decoration: none;
   color: rgba(191, 0, 255, 0.984);
   font-size: 13px;
-  font-family: Quicksand;
+ 
   margin-right: 20px;
 }
 .ancor_third{
   text-decoration: none;
   color: rgb(255, 0, 0);
   font-size: 13px;
-  font-family: Quicksand;
+
 }
 /* curriculam responsive part  */
 @media screen and (max-width: 576px){
@@ -306,7 +310,7 @@ margin-right: 15px;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
-  font-family: Quicksand;
+ 
   line-height: 20px;
   color: rgba(42, 47, 52, 0.819);
   margin-bottom: 30px;
@@ -321,7 +325,7 @@ margin-right: 15px;
   font-size: 19px;
   line-height: 22px;
   font-size: 700; 
-  font-family: Quicksand;
+ 
   text-align: center;
   margin: 30px 0;
 }
@@ -336,7 +340,7 @@ margin-right: 15px;
 .stories_two button, .stories_one button{
   font-size: 10px;
   font-size: 500; 
-  font-family: Quicksand;
+ 
   /* background-color: rgba(0, 255, 132, 0.945); */
   border-radius: 10px;
   padding: 8px 5px;
@@ -373,65 +377,73 @@ margin-right: 15px;
 .stories_two button, .stories_one button{
   position: relative;
 }
-
-  /* .stories_two button, .stories_one button{
-  position: absolute;
-   width: 27.43px;
-  height: 54.86px;
-  left: 0;
-  top: 4.89px;
-  margin-top: -41px; 
+.footer_btn{
+  background-color: rgb(44, 44, 233);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  font-family: Quicksand;
+  margin: 0 0 0 500px;
 }
 
-
-.story_first, .story_second{
-  position: relative;
   
-   margin: 19px 17px 5px 5px; 
-}   
-  */
   @meadia screen and (max-width:576px){
-    .story_first{
+    story_first .stories_one{
       display:none;
+      /* background-color: rgba(31, 125, 247, 0.78); */
     }
   }
 
-  .footer_container{
-    background-color: rgba(31, 125, 247, 0.78);
-    height: 400px;
-   /* width: 100%; */
-  }
 
-  .footer_btn{
-    color: rgb(255, 255, 255);
-    background-color: rgb(1, 111, 254);
-    border-radius: 6px;
-    font-family: "Quicksand", serif;
-    font-size: 10px;
-    font-weight: 500;
-    padding: 12px 40px;
-    border: none;
-    margin-left: 500px;
-    margin-bottom: 50px;
-}
-.footer_btn:hover{
-  background-color: red;
-  transition: .4s;
-}
-.stories_bg_img{
-  /* box-sizing: border-box;
-border: 0.94px solid rgb(242, 232, 255);
-border-radius: 18px;
-box-shadow: inset 0px 0px 28.3px 0.9px rgba(0, 0, 0, 0.05);
-background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-margin-right: 15px; */
-background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-width: 100%;
-}
-.kinder{
-  color: rgb(255, 255, 255);
-font-family: Quicksand;
-font-size: 28px;
+/* background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+width: 100%; */
+
+ .kinder{
+ color: rgb(255, 255, 255);
+font-size: 19px;
 font-weight: 700;
 text-align: left;
+}
+.kinder{ 
+  display: flex;
+}
+
+.footer{
+  background-color: rgba(20, 36, 210, 0.665);
+  padding: 70px 0;
+}
+.footer_container{
+  max-width: 1170px;
+  margin:  auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_col ul{
+    list-style: none;
+}
+.footer_col{
+  width: 30%;
+  padding: 0 55px;
+ }
+.footer_col p{
+  color: rgb(255, 255, 255);
+font-size: 17px;
+font-weight: 400;
+}
+.footer_col h3{
+  color: rgb(255, 255, 255);
+font-size: 22px;
+font-weight: 700;
+margin-bottom: 15px;
+}
+.footer_col ul li a{
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+
 }
