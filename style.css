@@ -93,7 +93,7 @@
       display: none;
     }
 
-      .hambarger {
+.nav_head, .hambarger{
         display: block;
         /* margin: 25px; */
     }
@@ -149,6 +149,7 @@
 @media screen and (max-width: 576px){
  .banner_container{
   flex-direction: column-reverse;
+
  }
  .banner_content{
   text-align: center;
@@ -165,7 +166,7 @@
 #curriculum_head{
   margin-top: 60px;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 25px;
   font-family: "Quicksand", serif;
   text-align: center;
 }
@@ -273,7 +274,111 @@ margin-right: 15px;
   background-color: orange;
   color: white;
 }
+@media screen and (max-width: 576px){
+   .btn_arrow{
+    display: none;
+   }
+}
+/* stories part start */
+.stories_container{
+  margin: 50px 0;
+}
 .stories_con{
   display: flex;
+  justify-content: space-between;
 }
- 
+.story_second{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.story_first{
+  margin-right: 20px;
+}
+.stories_one{
+  height: 100%;
+}
+
+.stories_one img, .stories_two img{
+  border-radius: 15px 15px 0 0;
+}
+.stories_one p{
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  font-family: Quicksand;
+  line-height: 20px;
+  color: rgba(42, 47, 52, 0.819);
+  margin-bottom: 30px;
+
+}
+.stories_one, .stories_two{
+  border-radius: 15px;
+  background-color: rgba(118, 255, 244, 0.621);
+  box-shadow: 10px 10px 2px rgba(24, 80, 80, 0.022);
+}
+
+.stories_one h3{
+  font-size: 19px;
+  line-height: 22px;
+  font-size: 700; 
+  font-family: Quicksand;
+  text-align: center;
+  margin: 30px 0;
+}
+.stories_two h3{
+  font-size: 15px;
+  line-height: 22px;
+  font-size: 600; 
+  font-family: Quicksand;
+  text-align: center;
+  margin: 10px 0;
+}
+.stories_two button, .stories_one button{
+  font-size: 10px;
+  font-size: 500; 
+  font-family: Quicksand;
+  background-color: rgba(0, 255, 132, 0.945);
+  border-radius: 10px;
+  padding: 8px 5px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: Quicksand;
+}
+.stories_two button, .stories_one button{
+  position: absolute;
+  top: -14px; 
+  right: -30px;
+}
+.stories_two button, .stories_one button{
+  position: relative;
+}
+
+  /* .stories_two button, .stories_one button{
+  position: absolute;
+   width: 27.43px;
+  height: 54.86px;
+  left: 0;
+  top: 4.89px;
+  margin-top: -41px; 
+}
+
+
+.story_first, .story_second{
+  position: relative;
+  
+   margin: 19px 17px 5px 5px; 
+}   
+  */
+  @meadia screen and (max-width:576px){
+    .story_first{
+      display:none;
+    }
+  }
+
+  .footer_container{
+    background-color: rgba(42, 238, 238, 0.875);
+    height: 400px;
+   width: 100%;
+  }
