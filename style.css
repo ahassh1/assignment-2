@@ -133,9 +133,7 @@
  /* curriculum part start  */
  .banner_item{
   background-image: url("./assets/bg.png");
-  /* background-position: center; 
-   background-repeat: no-repeat;
-  background-size: cover; */
+  width: 100%;
  }
 #curriculum_head{
   margin-top: 60px;
@@ -445,7 +443,7 @@ margin-bottom: 20px;
 }
 
 /* stories part responsive */
-@meadia screen and (max-width:576px){
+@media screen and (max-width:576px){
   .stories_one{
     display:none;
   }
