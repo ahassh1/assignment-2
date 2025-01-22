@@ -40,9 +40,6 @@
     text-align: center;
     margin-top: 10px;
   }
-  /* .kinder_garden{
-
-  } */
   .nav_head ul{
     display: flex;
     justify-content: space-between;
@@ -93,19 +90,6 @@
  .hambarger{
   display: none;
  }
- /* navbar resoponsive start */
- @media screen and (max-width: 576px){
-    .kinder_garden, .nav_head{
-      display: none;
-    }
-
-.hambarger{
-        display: block;
-        margin: 25px;
-    }
- }
- /* navbar responsive end  */
-
 
  /* banner part start  */
 .banner_container{
@@ -119,7 +103,6 @@
 .banner_head{
   font-size: 55px;
   font-weight: bold;
- 
   margin-top: 10px;
 
 }
@@ -147,26 +130,12 @@
   border: none;
   margin-top: 20px;
 }
-/* .banner_img{
- margin-top: 100px;
-} */
-/* banner reponsive start  */
-@media screen and (max-width: 576px){
- .banner_container{
-  flex-direction: column-reverse;
-
- }
- .banner_content{
-  text-align: center;
- }
-}
-
  /* curriculum part start  */
  .banner_item{
   background-image: url("./assets/bg.png");
-  background-position: center; 
+  /* background-position: center; 
    background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
  }
 #curriculum_head{
   margin-top: 60px;
@@ -188,7 +157,9 @@
 .kinder{
   font-size: 20px;
   font-weight: 500;
- 
+  color: black;
+  font-family: "Quicksand", serif;
+  text-align: center;
   margin: 20px;
 }
 .first_pra{
@@ -252,13 +223,7 @@ margin-right: 15px;
   font-size: 13px;
 
 }
-/* curriculam responsive part  */
-@media screen and (max-width: 576px){
-  .curriculum_container{
-    /* display: grid; */
-      grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 .btn_arrow{
  text-align: center;
  margin-bottom: 40px;
@@ -278,11 +243,7 @@ margin-right: 15px;
   background-color: orange;
   color: white;
 }
-@media screen and (max-width: 576px){
-   .btn_arrow{
-    display: none;
-   }
-}
+
 /* stories part start */
 .stories_container{
   margin: 50px 0;
@@ -377,6 +338,11 @@ margin-right: 15px;
 .stories_two button, .stories_one button{
   position: relative;
 }
+.stories_bg_img{
+  background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+
+/* footer part start  */
 .footer_btn{
   background-color: rgb(44, 44, 233);
   color: white;
@@ -384,50 +350,37 @@ margin-right: 15px;
   border: none;
   border-radius: 6px;
   font-family: Quicksand;
-  margin: 0 0 0 500px;
+  margin: 0 0 60px 500px;
 }
-
-  
-  @meadia screen and (max-width:576px){
-    story_first .stories_one{
-      display:none;
-      /* background-color: rgba(31, 125, 247, 0.78); */
-    }
-  }
-
-
-/* background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-width: 100%; */
-
- .kinder{
+.footer_btn:hover{
+  background-color: red;
+  transition: .4s;
+}
+ .kinder_head{
  color: rgb(255, 255, 255);
-font-size: 19px;
+font-size: 16px;
 font-weight: 700;
 text-align: left;
+gap: 0;
 }
-.kinder{ 
+.kinder_main{ 
   display: flex;
 }
 
 .footer{
   background-color: rgba(20, 36, 210, 0.665);
-  padding: 70px 0;
+  padding: 100px 0;
 }
-.footer_container{
-  max-width: 1170px;
-  margin:  auto;
-}
+ .footer_container{
+   max-width: 1170px;
+  margin:  0 auto; 
+
+} 
 .row{
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.footer_col ul{
-    list-style: none;
-}
-.footer_col{
-  width: 30%;
-  padding: 0 55px;
- }
+
 .footer_col p{
   color: rgb(255, 255, 255);
 font-size: 17px;
@@ -435,15 +388,76 @@ font-weight: 400;
 }
 .footer_col h3{
   color: rgb(255, 255, 255);
-font-size: 22px;
+font-size: 24px;
 font-weight: 700;
-margin-bottom: 15px;
+margin-bottom: 20px;
 }
-.footer_col ul li a{
-  font-size: 17px;
-  text-transform: capitalize;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
 
+.footer_head_one{
+ margin-top: 13px;
+ font-size: 17px;
+ text-transform: capitalize;
+ color: #ffffff;
+ text-decoration: none;
+ font-weight: 500;
+}
+
+ /* navbar resoponsive start */
+ @media screen and (max-width: 576px){
+  .kinder_garden, .nav_head{
+    display: none;
+  }
+
+.hambarger{
+      display: block;
+      margin: 25px;
+  }
+}
+
+/* banner reponsive start  */
+@media screen and (max-width: 576px){
+  .banner_container{
+   flex-direction: column-reverse;
+ 
+  }
+  .banner_content{
+   text-align: center;
+  }
+ }
+ /* curriculam responsive part  */
+@media screen and (max-width: 576px){
+  .curriculum_container{
+    /* display: grid; */
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 576px){
+  .curri_first, .curri_second{
+    margin-bottom: 15px;
+  }
+}
+
+/* arrow button responsive part  */
+@media screen and (max-width: 576px){
+  .btn_arrow{
+   display: none;
+  }
+}
+
+/* stories part responsive */
+@meadia screen and (max-width:576px){
+  .stories_one{
+    display:none;
+  }
+}
+/* footer part reponsive  */
+@media screen and (max-width:576px){
+  .row{
+    flex-direction: column;
+    margin: 0px 20px;
+   text-align: left;
+  }
+  .footer_col{
+    margin-top: 25px;
+  }
 }
