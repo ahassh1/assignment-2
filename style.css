@@ -403,8 +403,16 @@ margin-bottom: 20px;
  text-decoration: none;
  font-weight: 500;
 }
+.scrolling{
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 9px;
+  color: black;
+  font-weight: 700;
+}
 
- /* navbar resoponsive start */
+ /* navbar responsive start */
  @media screen and (max-width: 576px){
   .kinder_garden, .nav_head{
     display: none;
