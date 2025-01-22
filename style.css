@@ -250,6 +250,9 @@ margin-right: 15px;
   display: flex;
   justify-content: space-between;
 }
+.stories_three{
+display: none;
+}  
 .story_second{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -262,7 +265,7 @@ margin-right: 15px;
   height: 100%;
 }
 
-.stories_one img, .stories_two img{
+.stories_one img, .stories_two img, .stories_three img{
   border-radius: 15px 15px 0 0;
 }
 .stories_one p{
@@ -275,7 +278,7 @@ margin-right: 15px;
   margin-bottom: 30px;
 
 }
-.stories_one, .stories_two{
+.stories_one, .stories_two, .stories_three{
   border-radius: 15px;
   background-color: rgba(239, 242, 245, 0.906);
 }
@@ -288,7 +291,7 @@ margin-right: 15px;
   text-align: center;
   margin: 30px 0;
 }
-.stories_two h3{
+.stories_two h3, .stories_three h3{
   font-size: 15px;
   line-height: 22px;
   font-size: 600; 
@@ -296,7 +299,7 @@ margin-right: 15px;
   text-align: center;
   margin: 10px 0;
 }
-.stories_two button, .stories_one button{
+.stories_two button, .stories_one button, .stories_three button{
   font-size: 10px;
   font-size: 500; 
  
@@ -328,16 +331,17 @@ margin-right: 15px;
   background-color: rgb(255, 153, 0);
   color: whitesmoke;
 }
-.stories_two button, .stories_one button{
+.stories_two button, .stories_one button, .stories_three button{
   position: absolute;
   top: -14px; 
   right: -30px;
 }
-.stories_two button, .stories_one button{
+.stories_two button, .stories_one button, .stories_three button{
   position: relative;
 }
 .stories_bg_img{
-  background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+/*   background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%); */
+    background: url(image),linear-gradient(0.00deg, rgba(214, 201, 179, 0.3),rgba(197, 158, 158, 0.164) 100%);
 }
 
 /* footer part start  */
@@ -412,7 +416,7 @@ margin-bottom: 20px;
   }
 }
 
-/* banner reponsive start  */
+/* banner responsive start  */
 @media screen and (max-width: 576px){
   .banner_container{
    flex-direction: column-reverse;
@@ -422,7 +426,7 @@ margin-bottom: 20px;
    text-align: center;
   }
  }
- /* curriculam responsive part  */
+ /* curriculum responsive part  */
 @media screen and (max-width: 576px){
   .curriculum_container{
     /* display: grid; */
@@ -445,10 +449,18 @@ margin-bottom: 20px;
 /* stories part responsive */
 @media screen and (max-width:576px){
   .stories_one{
-    display:none;
+    display: none;
   }
+    .story_second{
+    grid-template-columns: repeat(2, 1fr); 
+    /* justify-content: center;  */
+    /* width: 100%; */
 }
-/* footer part reponsive  */
+    .stories_three{
+display: block;
+} 
+}
+/* footer part responsive  */
 @media screen and (max-width:576px){
   .row{
     flex-direction: column;
